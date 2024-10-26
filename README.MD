@@ -31,7 +31,7 @@ bash
 source venv/bin/activate
 Установите зависимости:
 
-bash
+``` bash
 Копировать код
 pip install -r requirements.txt
 2. Конфигурация базы данных
@@ -45,17 +45,13 @@ DATABASE_URL = postgresql://username:password@localhost/Meno
 3. Настройка отправки сообщений через Gmail
 Откройте src/config/email.py и укажите параметры для вашего Gmail аккаунта:
 
-python
-Копировать код
 MAIL_USERNAME = "ваш_адрес@gmail.com"
 MAIL_PASSWORD = "пароль_приложения"
-##⚠️ Обратите внимание, что для безопасности рекомендуется использовать пароли приложений для авторизации.
+## ⚠️ Обратите внимание, что для безопасности рекомендуется использовать пароли приложений для авторизации.
 
 4. Установка URL для авторизации
 Перейдите в src/request/request.py и установите URL для авторизации и запросов к пользовательскому сервису:
 
-python
-Копировать код
 AUTH_REQUEST = "yourport/auth-login/"
 GET_CURRENT_USER_REQUEST = "yourport/user-service/api/v1/get-current-user"
 GET_USER_REQUEST = "yourport/user-service/api/v1/get-user/"
@@ -68,11 +64,9 @@ GET_USER_REQUEST = "yourport/user-service/api/v1/get-user/"
 
 Для Work App:
 
-bash
-Копировать код
+ ``` bash
 uvicorn app.app:app --reload
-Для Work-User-Service:
+Для Work-User-Service :
 
-bash
-Копировать код
+``` bash
 uvicorn app.main:app --reload --host <ваш_хост>
