@@ -9,3 +9,4 @@
 [![WebSockets](https://img.shields.io/badge/WebSockets-000000?style=for-the-badge&logo=websocket)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://swagger.io/)
 [![Pydantic](https://img.shields.io/badge/Pydantic-3776AB?style=for-the-badge&logo=pydantic&logoColor=white)](https://docs.pydantic.dev/latest/)
+
