@@ -61,6 +61,7 @@ class VacancyService:
 
         self.session.add(vacancy)
         await self.session.commit()
+        log.warn("Vacancy Created Succsesfully")
 
     async def get_vacancy(self, id: str) -> VacancyResponse | None:
 
